@@ -1,0 +1,37 @@
+{
+  "name": "bind_google_cloud_iam",
+  "version": "1.0.0",
+  "description": "Node.jsでGoogle CloudのCloud IAMを操作する短いコード",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hikosaburou/bind_google_cloud_iam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hikosaburou/bind_google_cloud_iam/issues"
+  },
+  "homepage": "https://github.com/Hikosaburou/bind_google_cloud_iam#readme",
+  "devDependencies": {
+    "@types/node": "^20.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "googleapis": "^126.0.1"
+  }
+}
